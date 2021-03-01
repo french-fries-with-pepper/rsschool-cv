@@ -3,7 +3,7 @@
 Alexey_S_Antonov@protonmail.com  
 [github profile](https://github.com/french-fries-with-pepper)  
 ## Skills  
-### Front-end strack:  
+### Front-end stack:  
 - html  
 - css  
 - BEM
