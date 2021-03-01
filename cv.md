@@ -22,3 +22,37 @@ Have knowledge about html5, use css3(pure or with preprocessors like SCSS), well
 
 Have minor experience in system development (POSIX). Prefer using Linux as main OS.  
 
+## Some code example  
+```C
+/* like split() in JS*/
+char ** getTokens( const char *str,  const char * delim)
+{
+    /*init*/
+    char * copy;
+    copy = malloc((strlen(str)+1)*sizeof(char));
+    /*strtok will move copy pointer, so we need keep it to free*/
+    char * copySave = copy; 
+    strcpy(copy,str);
+    char **result;
+    result = (char**)malloc(MAX_TOKENS*sizeof(char*));
+    for (size_t i = 0; i < MAX_TOKENS; ++i)
+    {
+        result[i] = NULL;
+    }  
+    /*start spliting*/
+    int i =0;
+    char * token = strtok(copy, delim);
+    while (token!=NULL){
+        result[i] = (char*)malloc((strlen(token) + 1)*sizeof(char));
+        result[i]=strcpy(result[i], token);
+        ++i;
+        token = strtok(NULL, delim);
+    }
+    result[i] = NULL;
+    /*free memory*/
+    free(token);
+    free(copySave);
+
+    return result;
+}
+```  
