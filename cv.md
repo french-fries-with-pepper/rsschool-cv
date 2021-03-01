@@ -64,6 +64,7 @@ char ** getTokens( const char *str,  const char * delim)
 https://stepik.org/cert/288658)  
 - [HackerRank profile](https://www.hackerrank.com/alexey_s_antonov)  
 - [Stepik profile](https://stepik.org/users/163260827)  
+
 ## English  
 A2 level  
 
