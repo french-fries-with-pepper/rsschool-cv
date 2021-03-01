@@ -56,3 +56,14 @@ char ** getTokens( const char *str,  const char * delim)
     return result;
 }
 ```  
+## Work experience  
+***  
+## Education  
+- [HackerRank Problem Solving Advanced](https://www.hackerrank.com/certificates/4e6444b42d69)  
+- [Computer Science Center Основы программирования для Linux](
+https://stepik.org/cert/288658)  
+- [HackerRank profile](https://www.hackerrank.com/alexey_s_antonov)  
+- [Stepik profile](https://stepik.org/users/163260827)  
+## English  
+A2 level  
+
