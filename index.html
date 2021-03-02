@@ -19,6 +19,7 @@
             <section class="main_content__cv_card cv">
                 <header class="cv__header_part">
                     <h2 class="cv__header cv__header--big">Alexey Antonov</h2>
+                    <img class="cv__photo" src="./images/Waverly_Hills_sq.png" alt="avatar">
                 </header>
                 <article class="cv__part">
                     <h3 class="cv__header">Contact Information</h3>
@@ -88,16 +89,16 @@
                     
                     <pre class="cv__code">
 /* like split() in JS*/
-    char ** getTokens( const char *str,  const char * delim)
-    {
+char **getTokens(const char * str,  const char * delim)
+{
 /*init*/
     char * copy;
     copy = malloc((strlen(str)+1)*sizeof(char));
 /*strtok will move copy pointer, so we need keep it to free*/
     char * copySave = copy; 
     strcpy(copy,str);
-    char **result;
-    result = (char**)malloc(MAX_TOKENS*sizeof(char*));
+    char ** result;
+    result = (char **)malloc(MAX_TOKENS*sizeof(char *));
     for (size_t i = 0; i &lt; MAX_TOKENS; ++i)
     {
         result[i] = NULL;
@@ -112,7 +113,7 @@
         token = strtok(NULL, delim);
     }
     result[i] = NULL;
-    /*free memory*/
+/*free memory*/
     free(token);
     free(copySave);
 
@@ -156,7 +157,12 @@
                 </article>
             </section>
         </main>
-        <footer class="page_footer"></footer>
+        <footer class="page_footer">
+            <a class="page_footer__link" href="https://github.com/french-fries-with-pepper">
+                <img class="page_footer__icon" src="./images/GitHub-Mark-64px.png" alt="github logo">
+            </a>
+            <p class="page_footer__text">Alexey Antonov 2021</p>
+        </footer>
     </div>
 </body>
 </html>
