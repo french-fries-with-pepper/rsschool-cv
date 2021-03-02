@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rsschool cv</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
         <header class="page_header">
-            <h1>Rsschool cv html task</h1>
+            <h1 class="cv__header cv__header--main">Rsschool cv html task</h1>
         </header>
         <main class="main_content">
             <section class="main_content__cv_card cv">
@@ -18,10 +22,14 @@
                 </header>
                 <article class="cv__part">
                     <h3 class="cv__header">Contact Information</h3>
-                    <address class="cv__address">
-                        <a class="cv__link" href="mailto:Alexey_S_Antonov@protonmail.com">e-mail</a>
-                        <a class="cv__link" href="https://github.com/french-fries-with-pepper">github profile</a>
-                    </address>
+                    <ul class="cv__list">
+                        <li class="cv__list_item">
+                            <a class="cv__link" href="mailto:Alexey_S_Antonov@protonmail.com">e-mail</a>
+                        </li>
+                        <li class="cv__list_item">
+                            <a class="cv__link" href="https://github.com/french-fries-with-pepper">github profile</a>
+                        </li>
+                    </ul>
                 </article>
                 <article class="cv__part">
                     <h3 class="cv__header">Skills</h3>
@@ -110,7 +118,7 @@
 
     return result;
 }
-                    </pre>
+</pre>
                     
                 </article>
                 <article class="cv__part">

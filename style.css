@@ -1,0 +1,45 @@
+/*basic reset*/
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*typography rules*/
+html{
+    font-size:16px;
+}
+.cv__header{
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.cv__header--main{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.cv__header--big{
+    font-size: 1.6rem;
+}
+.cv__header--small{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.cv__description, .cv__item_name, .cv__link {
+    font-family: 'Roboto', sans-serif;
+}
+.cv__code{
+    /* background: #f4f4f4;
+    border: 1px solid #ddd;
+    color: #556; */
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    /* max-width: 100%;
+    overflow: auto;
+    padding: 1.2rem 1.5rem;
+    display: block;
+    word-wrap: break-word; */
+}
+
+/*positioning*/
