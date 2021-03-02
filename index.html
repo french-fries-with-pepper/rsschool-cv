@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rsschool cv</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="page_header">
+            <h1>Rsschool cv html task</h1>
+        </header>
+        <main class="main_content">
+            <section class="main_content__cv_card cv">
+                <header class="cv__header_part">
+                    <h2 class="cv__header cv__header--big">Alexey Antonov</h2>
+                </header>
+                <article class="cv__part">
+                    <h3 class="cv__header">Contact Information</h3>
+                    <address class="cv__address">
+                        <a class="cv__link" href="mailto:Alexey_S_Antonov@protonmail.com">e-mail</a>
+                        <a class="cv__link" href="https://github.com/french-fries-with-pepper">github profile</a>
+                    </address>
+                </article>
+                <article class="cv__part">
+                    <h3 class="cv__header">Skills</h3>
+                    <h3 class="cv__header cv__header--small">Front-end stack:</h3>
+                    <ul class="cv__list">
+                        <li class="cv__list_item">
+                            <p class="cv__item_name">html</p>
+                        </li>
+                        <li class="cv__list_item">
+                            <p class="cv__item_name">css</p>
+                        </li>
+                        <li class="cv__list_item">
+                            <p class="cv__item_name">BEM</p>
+                        </li>
+                        <li class="cv__list_item">
+                            <p class="cv__item_name">javascript</p>
+                        </li>
+                        <li class="cv__list_item">
+                            <p class="cv__item_name">typescript</p>
+                        </li>
+                        <li class="cv__list_item">
+                            <p class="cv__item_name">React</p>
+                        </li>
+                    </ul>
+                    <p class="cv__description">
+                        Have knowledge about html5, use css3(pure or with preprocessors like SCSS), well know JavaScript(es6+), can use build tools like webpack or gulp for optimization work process. Also have base experience in work with React.
+                    </p>
+                    <h3 class="cv__header cv__header--small">Others:</h3>
+                    <ul class="cv__list">
+                        <li class="cv__list_item">
+                            <p class="cv__item_name">git</p>
+                        </li>
+                        <li class="cv__list_item">
+                            <p class="cv__item_name">unix</p>
+                        </li>
+                        <li class="cv__list_item">
+                            <p class="cv__item_name">bash</p>
+                        </li>
+                        <li class="cv__list_item">
+                            <p class="cv__item_name">C</p>
+                        </li>
+                        <li class="cv__list_item">
+                            <p class="cv__item_name">C++</p>
+                        </li>
+                        <li class="cv__list_item">
+                            <p class="cv__item_name">Golang</p>
+                        </li>
+                    </ul>
+                    <p class="cv__description">
+                        Have minor experience in system development (POSIX). Prefer using Linux as main OS.
+                    </p>
+
+                </article>
+                <article class="cv__part">
+                    <h3 class="cv__header">Some code example</h3>
+                    
+                    <pre class="cv__code">
+/* like split() in JS*/
+    char ** getTokens( const char *str,  const char * delim)
+    {
+/*init*/
+    char * copy;
+    copy = malloc((strlen(str)+1)*sizeof(char));
+/*strtok will move copy pointer, so we need keep it to free*/
+    char * copySave = copy; 
+    strcpy(copy,str);
+    char **result;
+    result = (char**)malloc(MAX_TOKENS*sizeof(char*));
+    for (size_t i = 0; i &lt; MAX_TOKENS; ++i)
+    {
+        result[i] = NULL;
+    }  
+/*start spliting*/
+    int i =0;
+    char * token = strtok(copy, delim);
+    while (token!=NULL){
+        result[i] = (char*)malloc((strlen(token) + 1)*sizeof(char));
+        result[i]=strcpy(result[i], token);
+        ++i;
+        token = strtok(NULL, delim);
+    }
+    result[i] = NULL;
+    /*free memory*/
+    free(token);
+    free(copySave);
+
+    return result;
+}
+                    </pre>
+                    
+                </article>
+                <article class="cv__part">
+                    <h3 class="cv__header">Work experience</h3>
+                    <br>
+                </article>
+                <article class="cv__part">
+                    <h3 class="cv__header">Education</h3>
+                    <ul class="cv__list">
+                        <li class="cv__list_item">
+                            <a class="cv__link cv__link--list" href="https://www.hackerrank.com/certificates/4e6444b42d69" >
+                                HackerRank Problem Solving Advanced
+                            </a>
+                        </li>
+                        <li class="cv__list_item">
+                            <a class="cv__link cv__link--list" href="https://stepik.org/cert/288658" >
+                                Computer Science Center Основы программирования для Linux
+                            </a>
+                        </li>
+                        <li class="cv__list_item">
+                            <a class="cv__link cv__link--list" href="https://www.hackerrank.com/alexey_s_antonov" >
+                                HackerRank profile
+                            </a>
+                        </li>
+                        <li class="cv__list_item">
+                            <a class="cv__link cv__link--list" href="https://stepik.org/users/163260827" >
+                                Stepik profile
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <article class="cv__part">
+                    <h3 class="cv__header">English</h3>
+                    <p class="cv__description">A2 level</p>
+                </article>
+            </section>
+        </main>
+        <footer class="page_footer"></footer>
+    </div>
+</body>
+</html>
