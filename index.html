@@ -16,12 +16,12 @@
             <h1 class="cv__header cv__header--main">Rsschool cv html task</h1>
         </header>
         <main class="main_content">
-            <section class="main_content__cv_card cv">
+            <article class="main_content__cv_card cv">
                 <header class="cv__header_part">
                     <h2 class="cv__header cv__header--big">Alexey Antonov</h2>
                     <img class="cv__photo" src="./images/Waverly_Hills_sq.png" alt="avatar">
                 </header>
-                <article class="cv__part">
+                <section class="cv__part">
                     <h3 class="cv__header">Contact Information</h3>
                     <ul class="cv__list">
                         <li class="cv__list_item">
@@ -31,8 +31,8 @@
                             <a class="cv__link" href="https://github.com/french-fries-with-pepper">github profile</a>
                         </li>
                     </ul>
-                </article>
-                <article class="cv__part">
+                </section>
+                <section class="cv__part">
                     <h3 class="cv__header">Skills</h3>
                     <h3 class="cv__header cv__header--small">Front-end stack:</h3>
                     <ul class="cv__list">
@@ -83,8 +83,8 @@
                         Have minor experience in system development (POSIX). Prefer using Linux as main OS.
                     </p>
 
-                </article>
-                <article class="cv__part">
+                </section>
+                <section class="cv__part">
                     <h3 class="cv__header">Some code example</h3>
                     
                     <pre class="cv__code">
@@ -121,12 +121,12 @@ char **getTokens(const char * str,  const char * delim)
 }
 </pre>
                     
-                </article>
-                <article class="cv__part">
+                </section>
+                <section class="cv__part">
                     <h3 class="cv__header">Work experience</h3>
-                    <br>
-                </article>
-                <article class="cv__part">
+                    <hr>
+                </section>
+                <section class="cv__part">
                     <h3 class="cv__header">Education</h3>
                     <ul class="cv__list">
                         <li class="cv__list_item">
@@ -150,18 +150,21 @@ char **getTokens(const char * str,  const char * delim)
                             </a>
                         </li>
                     </ul>
-                </article>
-                <article class="cv__part">
+                </section>
+                <section class="cv__part">
                     <h3 class="cv__header">English</h3>
                     <p class="cv__description">A2 level</p>
-                </article>
-            </section>
+                </section>
+            </article>
         </main>
         <footer class="page_footer">
             <a class="page_footer__link" href="https://github.com/french-fries-with-pepper">
                 <img class="page_footer__icon" src="./images/GitHub-Mark-64px.png" alt="github logo">
             </a>
             <p class="page_footer__text">Alexey Antonov 2021</p>
+            <a class="page_footer__link" href="https://rs.school/js/">
+                <img class="page_footer__icon page_footer__icon--school" src="https://rs.school/images/rs_school_js.svg" alt="rsSchool logo">
+            </a>
         </footer>
     </div>
 </body>
